@@ -2,7 +2,7 @@ from collections import deque
 import cv2
 import numpy as np
 import time
-from picamera import PiCamera
+from picamera import Picamera2
 from picamera.array import PiRGBArray
 
 # One second to cast a spell
@@ -12,7 +12,7 @@ frames_per_spell = full_spell_time * framerate
 
 def rolling_long_exposure():
     # Set up our PiCamera
-    camera = PiCamera()
+    camera = Picamera2()
     camera.resolution = (640, 480)  # You may change this
     camera.framerate = framerate  # Set the framerate at 24 fps
     raw_capture = PiRGBArray(camera, size=(640, 480))  # You may change this 
