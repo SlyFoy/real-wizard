@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import time
 from picamera2 import Picamera2
-from picamera.array import PiRGBArray
+from picamera2.array import PiRGBArray
 
 # One second to cast a spell
 full_spell_time = 1
