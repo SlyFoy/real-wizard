@@ -2,7 +2,7 @@ from collections import deque
 import cv2
 import numpy as np
 import time
-from picamera import Picamera2
+from picamera2 import Picamera2
 from picamera.array import PiRGBArray
 
 # One second to cast a spell
