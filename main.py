@@ -15,7 +15,7 @@ def rolling_long_exposure():
     camera = Picamera2()
     camera.resolution = (640, 480)  # You may change this
     camera.framerate = framerate  # Set the framerate at 24 fps
-    raw_capture = PiRGBArray(camera, size=(640, 480))  # You may change this 
+
     
     print("Starting up")
     camera.start_preview()
